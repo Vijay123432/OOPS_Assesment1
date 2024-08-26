@@ -5,42 +5,36 @@ public class Emp{
     private int id;
     private String name;
     private long number;
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
+    private double points;
     public int getId() {
-        return id;
+      return id;
     }
     public void setId(int id) {
-        this.id = id;
+      this.id = id;
     }
-    
+    public String getName() {
+      return name;
+    }
+    public void setName(String name) {
+      this.name = name;
+    }
     public long getNumber() {
-        return number;
+      return number;
     }
     public void setNumber(long number) {
-        this.number = number;
+      this.number = number;
     }
-    public student(int id, String name) {
-        this.id = id;
-        this.name = name;
+    public double getPoints() {
+      return points;
     }
-  
-    public student(int id, String name, long number) {
-        this.id = id;
-        this.name = name;
-        this.number = number;
-    }
-    public student(){
-
+    public void setPoints(double points) {
+      this.points = points;
     }
     @Override
     public String toString() {
-        return "student [id=" + id + ", name=" + name + ", number=" + number + "]";
+      return "student [id=" + id + ", name=" + name + ", number=" + number + ", points=" + points + "]";
     }
-
-    }
+    
+  
+  }
 }
